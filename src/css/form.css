@@ -1,0 +1,23 @@
+@import url('common.css');
+
+.text-input {
+  align-items: center;
+  padding: 8px 16px;
+  width: 272px;
+  border-radius: 4px;
+  border: 1px solid var(--grey);
+  font-weight: 400;
+  margin-bottom: 16px;
+  transition: var(--animation);
+  transition-property: border;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33;
+}
+
+.text-input:hover, .text-input:focus {
+  border: 1px solid var(--black);
+}
