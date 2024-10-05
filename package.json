@@ -5,7 +5,7 @@
   "description": "",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/vanilla-app-template/",
+    "build": "vite build --base=/goit-advancedjs-hw-02/ --emptyOutDir",
     "preview": "vite preview"
   },
   "keywords": [],
