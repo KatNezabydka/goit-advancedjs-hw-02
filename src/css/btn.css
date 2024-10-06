@@ -1,11 +1,12 @@
-@import url('common.css');
+@import url('common/base.css');
 
 .btn {
   border: 1px solid var(--havy-blue);
   border-radius: 8px;
-  width: 75px;
+  width: 100%;
   align-items: center;
   padding: 8px 16px;
+  font-size: 16px;
   background: var(--havy-blue);
   color: var(--white);
   transition: var(--animation);

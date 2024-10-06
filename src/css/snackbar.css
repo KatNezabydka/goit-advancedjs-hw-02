@@ -2,18 +2,6 @@
 @import url('btn.css');
 @import url('form.css');
 
-.text-input.date{
-  max-width: 272px;
-}
-
-.btn.timer-btn{
-  width: 75px;
-}
-
-.flatpickr-input {
-  font-family: -apple-system, var(--font-family), sans-serif;
-}
-
 .timer {
   display: flex;
   align-items: flex-start;

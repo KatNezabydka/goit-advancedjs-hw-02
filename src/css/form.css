@@ -1,12 +1,36 @@
-@import url('common.css');
+@import url('common/base.css');
+
+label > .text-input {
+  margin-top: 8px;
+}
+
+fieldset {
+  margin-bottom: 24px;
+}
+
+.form {
+  max-width: 360px;
+}
+
+.radio-label {
+  margin-left: 48px;
+}
+
+.radio-label:hover {
+  cursor: pointer;
+}
 
 .text-input {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--black);
   align-items: center;
   padding: 8px 16px;
-  width: 272px;
+  width: 100%;
   border-radius: 4px;
   border: 1px solid var(--grey);
-  font-weight: 400;
   margin-bottom: 16px;
   transition: var(--animation);
   transition-property: border;
