@@ -1,7 +1,9 @@
 import '../css/snackbar.css';
 
-import errorIcon from '../img/error.svg';
-import okIcon from '../img/ok.svg';
+const icons = {
+  ok: new URL('../img/ok.svg', import.meta.url).href,
+  error: new URL('../img/error.svg', import.meta.url).href,
+};
 
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
@@ -19,7 +21,7 @@ form.addEventListener('submit', (event) => {
       iziToast.success({
         title: 'Success',
         backgroundColor: '#59a10d',
-        iconUrl: okIcon,
+        iconUrl: icons["ok"],
         messageColor: '#fff',
         titleColor: '#fff',
         messageSize: '16px',
@@ -32,7 +34,7 @@ form.addEventListener('submit', (event) => {
       iziToast.error({
         title: 'Error',
         backgroundColor: '#ef4040',
-        iconUrl: errorIcon,
+        iconUrl: icons["ok"],
         messageColor: '#fff',
         titleColor: '#fff',
         messageSize: '16px',

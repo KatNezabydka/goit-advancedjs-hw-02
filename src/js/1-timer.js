@@ -2,7 +2,10 @@ import '../css/timer.css';
 import 'flatpickr/dist/flatpickr.min.css';
 import 'izitoast/dist/css/iziToast.min.css';
 
-import errorIcon from '../img/error.svg';
+const icons = {
+  ok: new URL('../img/ok.svg', import.meta.url).href,
+  error: new URL('../img/error.svg', import.meta.url).href,
+};
 
 import flatpickr from 'flatpickr';
 import iziToast from 'izitoast';
@@ -39,7 +42,7 @@ function validateSelectedDate() {
     iziToast.error({
       title: 'Error',
       backgroundColor: '#ef4040',
-      iconUrl: errorIcon,
+      iconUrl: icons["ok"],
       messageColor: '#fff',
       titleColor: '#fff',
       messageSize: '16px',
